@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoirDrive — Luxury Car Rental</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="topbar glass">
+    <div class="brand">NOIRDRIVE</div>
+    <nav>
+      <a href="#fleet">Fleet</a>
+      <a href="#experience">Experience</a>
+      <a href="#booking">Booking</a>
+    </nav>
+    <a class="btn topbar-cta" href="#booking">Reserve Now</a>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Premium Travel & Car Rental Agency</p>
+        <h1>Drive the Future of Travel in Pure Luxury.</h1>
+        <p class="sub">
+          A pitch-black, cinema-grade 3D experience with effortless booking and
+          ultra-smooth transitions crafted for a world-class brand.
+        </p>
+        <div class="cta-row">
+          <a class="btn" href="#fleet">Explore Fleet</a>
+          <a class="btn btn-ghost" href="#booking">Plan My Trip</a>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=80" alt="Luxury sports car on dramatic road" />
+      </div>
+    </section>
+
+    <section id="fleet" class="section fleet">
+      <h2 class="reveal">Signature Fleet</h2>
+      <div class="cards">
+        <article class="card reveal tilt">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Black performance coupe" />
+          <div>
+            <h3>Midnight GT</h3>
+            <p>V12 performance for elite city-to-coast routes.</p>
+          </div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1200&q=80" alt="Premium luxury sedan" />
+          <div>
+            <h3>Imperial S-Class</h3>
+            <p>Executive comfort with private chauffeur options.</p>
+          </div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" alt="Luxury SUV in mountain setting" />
+          <div>
+            <h3>Atlas X SUV</h3>
+            <p>All-terrain confidence for refined adventure travel.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section split">
+      <div class="panel reveal">
+        <h2>Apple-level Smoothness</h2>
+        <p>Fluid parallax, immersive depth, and motion tuned to feel effortless.</p>
+      </div>
+      <div class="panel reveal">
+        <h2>Human-first Booking UX</h2>
+        <p>Fast checkout, clear pricing, and zero-friction flow on every device.</p>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking glass reveal">
+      <h2>Book Your Ride</h2>
+      <form class="booking-grid">
+        <label>Pick-up City <input type="text" placeholder="Dubai, Paris, Tokyo" /></label>
+        <label>Pick-up Date <input type="date" /></label>
+        <label>Return Date <input type="date" /></label>
+        <label>Vehicle Class
+          <select>
+            <option>Luxury Sedan</option>
+            <option>Supercar</option>
+            <option>SUV</option>
+          </select>
+        </label>
+        <button type="button" class="btn">Check Availability</button>
+      </form>
+    </section>
+  </main>
+
+  <a class="mobile-sticky-cta" href="#booking">Book in 30 seconds</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
